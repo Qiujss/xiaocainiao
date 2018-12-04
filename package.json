@@ -1,0 +1,32 @@
+{
+  "name": "xiaocainiao",
+  "version": "1.0.0",
+  "description": "一个gulp环境的项目",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qiujss/xiaocainiao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qiujss/xiaocainiao/issues"
+  },
+  "homepage": "https://github.com/Qiujss/xiaocainiao#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-less": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
