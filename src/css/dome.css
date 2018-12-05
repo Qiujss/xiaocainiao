@@ -1,0 +1,13 @@
+@import url("../css/reset.css");
+@import url(../css/reset.css);
+#top {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.box {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}

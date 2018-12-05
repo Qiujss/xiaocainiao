@@ -18,6 +18,7 @@ gulp.task("less", function() {
         .pipe(less())
         .pipe(cleancss())
         .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("src/css"))
         .pipe(bs.reload({ stream: true }));
 })
 
