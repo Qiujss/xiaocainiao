@@ -1,11 +1,31 @@
 var gulp = require("gulp");
-var $ = require("gulp-load-plugins"); //加载插件
-
+var loadPlugins = require("gulp-load-plugins"); //加载插件
 var less = require("gulp-less"); //gulp less插件
 var cleancss = require("gulp-clean-css");
 var htmlmin = require("gulp-htmlmin");
 var fileinclude = require('gulp-file-include');
 var bs = require("browser-sync").create();
+var uglify = require('gulp-uglify');
+
+var $ = require("jquery");
+// var gulpJquery = require('gulp-jquery-mr');
+
+
+// gulp.task('html', function() {
+//     return gulp.src(["src/**/*.html", "test/index.html"])
+//         .pipe(gulpJquery($))
+//         .pipe(gulp.dest('dist'));
+// });
+
+gulp.task('js', function() {
+
+    gulp.src("src/js/*.js") //多个文件以数组形式传入
+
+    .pipe(uglify())
+
+    .pipe(gulp.dest('dist/js'));
+
+});
 
 gulp.task("test", function() {
     console.log('gulp成功运行');
@@ -18,6 +38,7 @@ gulp.task("less", function() {
         .pipe(gulp.dest("dist/css"))
         .pipe(bs.reload({ stream: true }));
 })
+
 
 gulp.task("html", function() {
     gulp.src(["src/**/*.html", "!src/temp/*"])
@@ -68,7 +89,7 @@ gulp.task("watch", function() {
 
     gulp.watch("src/less/*.less", ["less"]);
 
-    gulp.watch("src/js/*.less", ["js"]);
+    gulp.watch("src/js/*.js", ["js"]);
 
 })
 

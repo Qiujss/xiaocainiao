@@ -25,11 +25,11 @@
         "gulp-imagemin": "^5.0.3",
         "gulp-less": "^4.0.1",
         "gulp-load-plugins": "^1.5.0",
-        "gulp-uglify": "^3.0.1"
+        "gulp-uglify": "^3.0.1",
+        "jquery": "^3.3.1"
     },
     "dependencies": {
         "gulp-load-plugins": "^1.5.0",
-        "gulp-jquery-mr": "^1.0.1-c",
-        "jquery": "^3.3.1"
+        "gulp-jquery-mr": "^1.0.1-c"
     }
 }
