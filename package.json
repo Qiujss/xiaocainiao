@@ -27,6 +27,7 @@
     "gulp-uglify": "^3.0.1"
   },
   "dependencies": {
+    "gulp-jquery-mr": "^1.0.1-c",
     "jquery": "^3.3.1"
   }
 }

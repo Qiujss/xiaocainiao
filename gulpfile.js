@@ -7,6 +7,8 @@ var htmlmin = require("gulp-htmlmin");
 var fileinclude = require('gulp-file-include');
 var bs = require("browser-sync").create();
 
+var gulpJquery = require('gulp-jquery-mr');
+
 
 
 gulp.task("test", function() {
@@ -19,6 +21,11 @@ gulp.task("less", function() {
         .pipe(cleancss())
         .pipe(gulp.dest("src/css"))
         .pipe(gulp.dest("dist/css"))
+        .pipe(bs.reload({ stream: true }));
+})
+gulp.task("js", function() {
+    gulp.src("src/js/*.js")
+        .pipe(gulp.dest("dist/js"))
         .pipe(bs.reload({ stream: true }));
 })
 
@@ -37,6 +44,7 @@ gulp.task("html", function() {
             minifyJS: true, //压缩页面JS
             minifyCSS: true //压缩页面CSS
         }))
+        .pipe(gulpJquery())
         .pipe(gulp.dest("dist"));
 })
 
@@ -74,7 +82,7 @@ gulp.task("watch", function() {
 })
 
 // 默认任务，gulp直接确定的时候执行
-gulp.task("default", ["serve", "html", "less"], function() {
+gulp.task("default", ["serve", "html", "less", "js"], function() {
     gulp.start("watch");
     console.log('监听运行');
 })
