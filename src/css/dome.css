@@ -1,1 +1,17 @@
+<<<<<<< HEAD
+@import url("../css/reset.css");
+@import url(../css/reset.css);
+#top {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.box {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+=======
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{color:#000;text-decoration:none}.clearfix:after,.clearfix:before{display:table;line-height:0;content:""}.clearfix:after{clear:both}body,html{width:100%;height:100%}.box{position:absolute;top:0;left:0;right:0;bottom:0;background:#583939}.box .active{background:#4d9e83;color:#fff}.box article{width:100%;position:relative;top:50%;transform:translate(0,-50%);display:flex;justify-content:center;align-items:center}.box article .form{width:8rem;height:9.866667rem}.box article .form ul{display:flex;height:.906667rem;background:#ced1d5;border-radius:3px;width:100%}.box article .form ul li{flex:1;height:100%;text-align:center;font-size:.4rem;line-height:.906667rem}.box article .form .main input{border:none;width:90%;height:1.333333rem;border-bottom:1px solid #fff;background:0 0;font-size:.4rem;padding-left:.533333rem}.box article .form .main input:first-child{margin-top:.533333rem}.box article .form .main ::placeholder{color:#fff}.box article .form .main .denglv{width:100%;height:1.066667rem;border:none;background:#3c9f7b;color:#fff;font-size:.346667rem;border-radius:5px;margin-top:1.973333rem}.box article .form .footer{width:4.266667rem;height:.44rem;display:flex;margin-top:.853333rem;justify-content:space-evenly;font-size:.4rem;color:#3c9f7b;margin-left:1.706667rem}
+>>>>>>> 5a7bba36eec6772bb8623f1ba5147d81398173c8

@@ -21,6 +21,7 @@ gulp.task("less", function() {
         .pipe(cleancss())
         .pipe(gulp.dest("src/css"))
         .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("src/css"))
         .pipe(bs.reload({ stream: true }));
 })
 gulp.task("js", function() {
