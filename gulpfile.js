@@ -7,7 +7,7 @@ var htmlmin = require("gulp-htmlmin");
 var fileinclude = require('gulp-file-include');
 var bs = require("browser-sync").create();
 
-var gulpJquery = require('gulp-jquery-mr');
+
 
 
 
@@ -44,7 +44,6 @@ gulp.task("html", function() {
             minifyJS: true, //压缩页面JS
             minifyCSS: true //压缩页面CSS
         }))
-        .pipe(gulpJquery())
         .pipe(gulp.dest("dist"));
 })
 
@@ -58,7 +57,7 @@ gulp.task("serve", function() {
         server: {
             baseDir: "./dist"
         },
-        startPath: "dome.html",
+        startPath: "index.html",
         //更改默认端口weinre
         ui: {
             port: 8081,
