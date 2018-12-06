@@ -1,1 +1,3 @@
-$(".for_ul li").on("click",function(){console.log(this)});
+$(".for_ul li").on("click", function() {
+    console.log(this);
+})

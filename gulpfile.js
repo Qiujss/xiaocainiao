@@ -38,6 +38,11 @@ gulp.task("less", function() {
         .pipe(gulp.dest("dist/css"))
         .pipe(bs.reload({ stream: true }));
 })
+gulp.task("js", function() {
+    gulp.src("src/js/*.js")
+        .pipe(gulp.dest("dist/js"))
+        .pipe(bs.reload({ stream: true }));
+})
 
 
 gulp.task("html", function() {

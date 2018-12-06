@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body .box {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+body .box .top {
+  width: 100%;
+  height: 1.306667rem /* 98/75 */;
+  background: #27c1b4;
+  display: flex;
+  align-items: center;
+}
+body .box .top ul {
+  font-size: 0.346667rem /* 26/75 */;
+  display: flex;
+  list-style: none;
+  width: 6.8rem /* 510/75 */;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.133333rem /* 10/75 */;
+  border: 0.013333rem /* 1/75 */ #ffffff solid;
+}
+body .box .top ul li {
+  flex: 1;
+  padding: 0.213333rem /* 16/75 */ 0.066667rem /* 5/75 */;
+  text-align: center;
+  color: #fff;
+}
+body .box .top ul .lis1 {
+  background: #fff;
+  color: #27c1b4;
+}
+body .box .ban {
+  height: 1.013333rem /* 76/75 */;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+body .box .ban a {
+  flex: 1;
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 0.32rem /* 24/75 */;
+}
+body .box .ban a img {
+  height: 0.466667rem /* 35/75 */;
+}
+body .box .ban .sa1 {
+  color: #27c1b4;
+  padding-left: 2.8rem /* 210/75 */;
+}
+body .box .ban .sa2 {
+  padding-left: 1.066667rem /* 80/75 */;
+}
+body .box .bod {
+  height: 0.266667rem /* 20/75 */;
+  background: #f0f0f0;
+}
+body .box .bodd {
+  width: 100%;
+  height: 2.666667rem /* 200/75 */;
+  background: #fff;
+  border-bottom: 0.013333rem /* 1/75 */ #e5e5e5 solid;
+}
+body .box .bodd dl {
+  width: 100%;
+  display: flex;
+  height: 2.133333rem /* 160/75 */;
+  padding-top: 0.533333rem /* 40/75 */;
+}
+body .box .bodd dl dt {
+  width: 1.333333rem /* 100/75 */;
+  height: 1.333333rem /* 100/75 */;
+  padding: 0 0.266667rem /* 20/75 */;
+}
+body .box .bodd dl dt img {
+  width: 100%;
+  height: 100%;
+}
+body .box .bodd dl dd {
+  height: 2rem /* 150/75 */;
+}
+body .box .bodd dl dd h4 {
+  font-size: 0.266667rem /* 20/75 */;
+  color: #27c1b4;
+}
+body .box .bodd dl dd p {
+  font-size: 0.266667rem /* 20/75 */;
+  letter-spacing: 0.106667rem /* 8/75 */;
+  line-height: 0.4rem /* 30/75 */;
+  color: #666666;
+}
+body .box .bodd dl dd span {
+  float: right;
+  color: #fb3a35;
+}
+body .box .bodd dl dd .hh {
+  color: #fd9632;
+  border: 1px solid #fd9632;
+  border-radius: 0.066667rem /* 5/75 */;
+  float: right;
+  margin-right: 0.533333rem /* 40/75 */;
+}
+.clear {
+  clear: both;
+}
