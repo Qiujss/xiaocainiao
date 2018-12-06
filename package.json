@@ -28,7 +28,6 @@
         "gulp-uglify": "^3.0.1"
     },
     "dependencies": {
-        "gulp-load-plugins": "^1.5.0",
         "gulp-jquery-mr": "^1.0.1-c",
         "jquery": "^3.3.1"
     }
