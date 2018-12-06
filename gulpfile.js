@@ -36,17 +36,11 @@ gulp.task("less", function() {
         .pipe(less())
         .pipe(cleancss())
         .pipe(gulp.dest("dist/css"))
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 14c95eed6959008e1728b67aa899358c1d9da2a5
         .pipe(bs.reload({ stream: true }));
 })
 gulp.task("js", function() {
     gulp.src("src/js/*.js")
         .pipe(gulp.dest("dist/js"))
-=======
->>>>>>> 0c43f3a186b614b100166a57459b5465b764486a
         .pipe(bs.reload({ stream: true }));
 })
 
@@ -79,7 +73,7 @@ gulp.task("serve", function() {
         server: {
             baseDir: "./dist"
         },
-        startPath: "top.html",
+        startPath: "index.html",
         //更改默认端口weinre
         ui: {
             port: 8081,
