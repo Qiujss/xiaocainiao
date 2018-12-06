@@ -46,10 +46,73 @@
         border-bottom: 1px solid #ccc;
     }
     .res{
+        flex: 1;
         background: #fff;
-        height: 14.933333rem /* 1120/75 */;
-        display: flex;
+        ul{
+           display: flex;
+           height: .973333rem /* 73/75 */;
+           line-height: .973333rem /* 73/75 */;
+           text-align: center;
+           li{
+               flex: 1;
+               display: flex;
+               a{
+                  text-decoration: none;
+                  display: block;
+                  width: 1.813333rem /* 136/75 */;
+                  height: .973333rem /* 73/75 */;
+                  margin: 0 auto;
+                  &:hover{
+                      border-bottom: 1px solid #79dfd9;
+                      color: #79dfd9;
+                  } 
+               }
+           }
+        }
     }
+    .xian{
+        background: #fff;
+        height: 2.626667rem /* 197/75 */;
+        dl{
+            height: 2.626667rem /* 197/75 */;
+            border-bottom: 1px solid #ccc;
+            padding:  .133333rem /* 10/75 */;
+            display: flex;
+            padding: .133333rem /* 10/75 */;
+            dt{    
+                width: 2.546667rem /* 191/75 */;
+                height: 1.92rem /* 144/75 */;
+                flex: 1;
+            }
+            dd{
+                flex: 2;
+                h2{
+                   text-indent: .266667rem /* 20/75 */;
+                   line-height: .4rem /* 30/75 */;
+                   font-size: .24rem /* 18/75 */;
+                }
+                p{
+                    padding-left: .133333rem /* 10/75 */;
+                    font-size: .16rem /* 12/75 */;
+                    text-indent: .32rem /* 24/75 */;
+                    color: #666666;
+                }
+                a{
+                    width: 1.333333rem /* 100/75 */;
+                    margin: .266667rem /* 20/75 */ .666667rem /* 50/75 */;
+                    display: inline-block;  
+                    height: .533333rem /* 40/75 */;
+                    line-height: .533333rem /* 40/75 */;
+                    text-align: center;
+                    span{
+                        color: #666666;
+                        padding-left: .266667rem /* 20/75 */;
+                    }
+                }
+            }                    
+        }
+    }
+
 }
 *{
     margin: 0;
