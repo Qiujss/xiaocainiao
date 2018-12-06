@@ -1,15 +1,31 @@
 var gulp = require("gulp");
-var $ = require("gulp-load-plugins"); //加载插件
-
+var loadPlugins = require("gulp-load-plugins"); //加载插件
 var less = require("gulp-less"); //gulp less插件
 var cleancss = require("gulp-clean-css");
 var htmlmin = require("gulp-htmlmin");
 var fileinclude = require('gulp-file-include');
 var bs = require("browser-sync").create();
+var uglify = require('gulp-uglify');
+
+var $ = require("jquery");
+// var gulpJquery = require('gulp-jquery-mr');
 
 
+// gulp.task('html', function() {
+//     return gulp.src(["src/**/*.html", "test/index.html"])
+//         .pipe(gulpJquery($))
+//         .pipe(gulp.dest('dist'));
+// });
 
+gulp.task('js', function() {
 
+    gulp.src("src/js/*.js") //多个文件以数组形式传入
+
+    .pipe(uglify())
+
+    .pipe(gulp.dest('dist/js'));
+
+});
 
 gulp.task("test", function() {
     console.log('gulp成功运行');
@@ -19,15 +35,21 @@ gulp.task("less", function() {
     gulp.src("src/less/*.less")
         .pipe(less())
         .pipe(cleancss())
-        .pipe(gulp.dest("src/css"))
         .pipe(gulp.dest("dist/css"))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 14c95eed6959008e1728b67aa899358c1d9da2a5
         .pipe(bs.reload({ stream: true }));
 })
 gulp.task("js", function() {
     gulp.src("src/js/*.js")
         .pipe(gulp.dest("dist/js"))
+=======
+>>>>>>> 0c43f3a186b614b100166a57459b5465b764486a
         .pipe(bs.reload({ stream: true }));
 })
+
 
 gulp.task("html", function() {
     gulp.src(["src/**/*.html", "!src/temp/*"])
@@ -57,7 +79,7 @@ gulp.task("serve", function() {
         server: {
             baseDir: "./dist"
         },
-        startPath: "index.html",
+        startPath: "top.html",
         //更改默认端口weinre
         ui: {
             port: 8081,
@@ -78,6 +100,8 @@ gulp.task("watch", function() {
 
     gulp.watch("src/less/*.less", ["less"]);
 
+    gulp.watch("src/js/*.js", ["js"]);
+
 })
 
 // 默认任务，gulp直接确定的时候执行
@@ -85,3 +109,5 @@ gulp.task("default", ["serve", "html", "less", "js"], function() {
     gulp.start("watch");
     console.log('监听运行');
 })
+
+//
